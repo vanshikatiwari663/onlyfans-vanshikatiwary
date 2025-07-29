@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OnlyFans</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      margin: 0;
+      background: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .logo-text {
+      font-size: 60px;
+      font-weight: bold;
+      color: #00AFF0;
+      display: flex;
+      align-items: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .logo-text::before {
+      content: '💙';
+      font-size: 55px;
+      margin-right: 15px;
+    }
+
+    #confirm-box {
+      margin-top: 40px;
+      text-align: center;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    h2 {
+      color: #333;
+      font-size: 24px;
+    }
+
+    .btn {
+      background-color: #1DA1F2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0d8bdc;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-text">OnlyFans</div>
+
+  <div id="confirm-box">
+    <h2>Are you 18 years or older?</h2>
+    <button class="btn" onclick="redirect()">Yes</button>
+    <button class="btn" onclick="redirect()">No</button>
+  </div>
+
+  <script>
+    function redirect() {
+      window.location.href = "https://www.youtube.com/watch?v=t6jcq3BE2AI";
+    }
+  </script>
+</body>
+</html>
+
